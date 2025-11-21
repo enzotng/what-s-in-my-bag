@@ -1,0 +1,51 @@
+newmtl leather_Mat
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal woman_travel_bag_open/leather_Mat_normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness woman_travel_bag_open/leather_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm woman_travel_bag_open/leather_Mat_metallic.png
+Ns 16
+map_Kd woman_travel_bag_open/leather_Mat_baseColor.png
+newmtl furniture_Mat
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal woman_travel_bag_open/furniture_Mat_normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness woman_travel_bag_open/furniture_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm woman_travel_bag_open/furniture_Mat_metallic.png
+Ns 16
+map_Kd woman_travel_bag_open/furniture_Mat_baseColor.png
+newmtl textile_Mat
+Ni 1.6
+Ka 0 0 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal woman_travel_bag_open/textile_Mat_normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness woman_travel_bag_open/textile_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm woman_travel_bag_open/textile_Mat_metallic.png
+Ns 16
+map_Kd woman_travel_bag_open/textile_Mat_baseColor.png

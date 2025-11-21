@@ -1,0 +1,54 @@
+newmtl fabric_strap_MAT
+Ni 1.6
+Ka 0 0 0
+map_Ke shoulder_bag/fabric_strap_MAT_glow.png
+d 1
+Kd 0 0 0
+adobe_map_normal shoulder_bag/fabric_strap_MAT_normal.png
+map_d shoulder_bag/fabric_strap_MAT_opacity.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness shoulder_bag/fabric_strap_MAT_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm shoulder_bag/fabric_strap_MAT_metallic.png
+Ns 16
+map_Kd shoulder_bag/fabric_strap_MAT_baseColor.png
+newmtl plastic_MAT
+Ni 1.6
+Ka 0 0 0
+map_Ke shoulder_bag/plastic_MAT_glow.png
+d 1
+Kd 0 0 0
+adobe_map_normal shoulder_bag/plastic_MAT_normal.png
+map_d shoulder_bag/plastic_MAT_opacity.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness shoulder_bag/plastic_MAT_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm shoulder_bag/plastic_MAT_metallic.png
+Ns 16
+map_Kd shoulder_bag/plastic_MAT_baseColor.png
+newmtl fabric_bag_MAT
+Ni 1.6
+Ka 0 0 0
+map_Ke shoulder_bag/fabric_bag_MAT_glow.png
+d 1
+Kd 0 0 0
+adobe_map_normal shoulder_bag/fabric_bag_MAT_normal.png
+map_d shoulder_bag/fabric_bag_MAT_opacity.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness shoulder_bag/fabric_bag_MAT_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm shoulder_bag/fabric_bag_MAT_metallic.png
+Ns 16
+map_Kd shoulder_bag/fabric_bag_MAT_baseColor.png

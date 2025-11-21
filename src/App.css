@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Edwardian Script ITC';
+  src: url('EdwardianScriptITC.woff2') format('woff2'),
+    url('EdwardianScriptITC.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-family: 'Edwardian Script ITC', cursive;
+}

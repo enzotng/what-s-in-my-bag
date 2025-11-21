@@ -1,0 +1,48 @@
+newmtl Paper_Mat
+Ni 1.5
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness Notebook/Paper_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+Ns 16
+map_Kd Notebook/Paper_Mat_baseColor.png
+newmtl Fabric_Mat
+Ni 1.5
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness Notebook/Fabric_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+Ns 16
+map_Kd Notebook/Fabric_Mat_baseColor.png
+newmtl Leather_Mat
+Ni 1.5
+Ka 0 0 0
+Pm 0
+d 1.0
+Ke 0.0
+Kd 0 0 0
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness Notebook/Leather_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+Ns 16
+map_Kd Notebook/Leather_Mat_baseColor.png

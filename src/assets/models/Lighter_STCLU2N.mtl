@@ -1,0 +1,17 @@
+newmtl Lighter_Mat
+Ni 1.5
+Ka 0 0 0
+map_Ke Lighter_STCLU2N/Lighter_glow.png
+d 1.0
+Kd 0 0 0
+adobe_map_normal Lighter_STCLU2N/Lighter_normal.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness Lighter_STCLU2N/Lighter_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm Lighter_STCLU2N/Lighter_metallic.png
+Ns 16
+map_Kd Lighter_STCLU2N/Lighter_baseColor.png

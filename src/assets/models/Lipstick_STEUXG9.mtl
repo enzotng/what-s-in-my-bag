@@ -1,0 +1,72 @@
+newmtl Plastic_Clear_Mat
+Ni 1.5
+Ka 0 0 0
+d 1
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal Lipstick_STEUXG9/Plastic_Clear_Mat_normal.png
+map_d Lipstick_STEUXG9/Plastic_Clear_Mat_opacity.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_map_roughness Lipstick_STEUXG9/Plastic_Clear_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm Lipstick_STEUXG9/Plastic_Clear_Mat_metallic.png
+Ns 16
+adobe_map_translucence Lipstick_STEUXG9/Plastic_Clear_Mat_translucence.png
+map_Kd Lipstick_STEUXG9/Plastic_Clear_Mat_baseColor.png
+newmtl Metallic_Mat
+Ni 1.5
+Ka 0 0 0
+d 1
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal Lipstick_STEUXG9/Metallic_Mat_normal.png
+map_d Lipstick_STEUXG9/Metallic_Mat_opacity.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness Lipstick_STEUXG9/Metallic_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm Lipstick_STEUXG9/Metallic_Mat_normal.png
+Ns 16
+map_Kd Lipstick_STEUXG9/Metallic_Mat_baseColor.png
+newmtl Crayon_Mat
+Ni 1.5
+Ka 0 0 0
+d 1
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal Lipstick_STEUXG9/Crayon_Mat_normal.png
+map_d Lipstick_STEUXG9/Crayon_Mat_opacity.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_translucence 0.0
+adobe_map_roughness Lipstick_STEUXG9/Crayon_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm Lipstick_STEUXG9/Crayon_Mat_metallic.png
+Ns 16
+map_Kd Lipstick_STEUXG9/Crayon_Mat_baseColor.png
+newmtl Plastic_Gloss_Mat
+Ni 1.5
+Ka 0 0 0
+d 1
+Ke 0.0
+Kd 0 0 0
+adobe_map_normal Lipstick_STEUXG9/Plastic_Gloss_Mat_normal.png
+map_d Lipstick_STEUXG9/Plastic_Gloss_Mat_opacity.png
+Tr 0
+illum 7
+Ks 1 1 1
+adobe_map_roughness Lipstick_STEUXG9/Plastic_Gloss_Mat_roughness.png
+adobe_interior_color 1.0 1.0 1.0
+adobe_density 0.0
+map_Pm Lipstick_STEUXG9/Plastic_Gloss_Mat_metallic.png
+Ns 16
+adobe_map_translucence Lipstick_STEUXG9/Plastic_Clear_Mat_translucence.png
+map_Kd Lipstick_STEUXG9/Plastic_Gloss_Mat_baseColor.png
