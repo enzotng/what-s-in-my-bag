@@ -4,8 +4,8 @@
 
 @font-face {
   font-family: 'Edwardian Script ITC';
-  src: url('EdwardianScriptITC.woff2') format('woff2'),
-    url('EdwardianScriptITC.woff') format('woff');
+  src: url('./assets/fonts/EdwardianScriptITC.woff2') format('woff2'),
+    url('./assets/fonts/EdwardianScriptITC.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -15,37 +15,28 @@
   font-family: 'Helvetica';
   font-style: normal;
   font-weight: normal;
-  src: local('Helvetica'), url('Helvetica.woff') format('woff');
+  src: local('Helvetica'), url('./assets/fonts/Helvetica.woff') format('woff');
 }
 
-
 @font-face {
-  font-family: 'Helvetica Oblique';
-  font-style: normal;
+  font-family: 'Helvetica';
+  font-style: italic;
   font-weight: normal;
-  src: local('Helvetica Oblique'), url('Helvetica-Oblique.woff') format('woff');
+  src: local('Helvetica Oblique'), url('./assets/fonts/Helvetica-Oblique.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Helvetica';
   font-style: normal;
-  font-weight: normal;
-  src: local('Helvetica'), url('Helvetica-Bold.woff') format('woff');
+  font-weight: bold;
+  src: local('Helvetica Bold'), url('./assets/fonts/Helvetica-Bold.woff') format('woff');
 }
 
 @font-face {
-  font-family: 'Helvetica Bold Oblique';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Helvetica Bold Oblique'), url('Helvetica-BoldOblique.woff') format('woff');
-}
-
-
-@font-face {
-  font-family: 'Helvetica Light';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Helvetica Light'), url('helvetica-light-587ebe5a59211.woff') format('woff');
+  font-family: 'Helvetica';
+  font-style: italic;
+  font-weight: bold;
+  src: local('Helvetica Bold Oblique'), url('./assets/fonts/Helvetica-BoldOblique.woff') format('woff');
 }
 
 :root {
