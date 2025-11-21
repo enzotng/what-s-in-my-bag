@@ -6,17 +6,60 @@ import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 import { Mesh } from 'three';
 import * as THREE from 'three';
 import familleImg from '../../assets/images/jpeg/famille.jpg';
+import vocalAudio from '../../assets/audio/vocal.mp3';
+
+// Model imports
+import toyBearUrl from '../../assets/models/toy_bear.obj?url';
+import notebookUrl from '../../assets/models/Notebook.obj?url';
+import lipstickUrl from '../../assets/models/Lipstick_STEUXG9.obj?url';
+import weddingRingUrl from '../../assets/models/wedding_ring_STVXUM8.obj?url';
+import smartphoneUrl from '../../assets/models/smartphone_STF7C31.obj?url';
+import lighterUrl from '../../assets/models/Lighter_STCLU2N.obj?url';
+
+// Texture imports - Toy Bear
+import toyBearBaseColor from '../../assets/models/textures/toy_bear_Mat_baseColor.png';
+import toyBearNormal from '../../assets/models/textures/toy_bear_Mat_normal.png';
+import toyBearRoughness from '../../assets/models/textures/toy_bear_Mat_roughness.png';
+
+// Notebook textures
+import notebookPaperBase from '../../assets/models/textures/Paper_Mat_baseColor.png';
+import notebookPaperRoughness from '../../assets/models/textures/Paper_Mat_roughness.png';
+import notebookFabricBase from '../../assets/models/textures/Fabric_Mat_baseColor.png';
+import notebookFabricRoughness from '../../assets/models/textures/Fabric_Mat_roughness.png';
+
+// Lipstick textures
+import lipstickCrayonBase from '../../assets/models/textures/Crayon_Mat_baseColor.png';
+import lipstickCrayonNormal from '../../assets/models/textures/Crayon_Mat_normal.png';
+import lipstickCrayonRoughness from '../../assets/models/textures/Crayon_Mat_roughness.png';
+
+// Wedding Ring textures
+import weddingRingBaseColor from '../../assets/models/textures/wedding_ring_Mat_baseColor.png';
+import weddingRingNormal from '../../assets/models/textures/wedding_ring_Mat_normal.png';
+import weddingRingRoughness from '../../assets/models/textures/wedding_ring_Mat_roughness.png';
+import weddingRingMetallic from '../../assets/models/textures/wedding_ring_Mat_metallic.png';
+
+// Smartphone textures
+import smartphoneBaseColor from '../../assets/models/textures/aluminium_smartphone_Mat_baseColor.png';
+import smartphoneNormal from '../../assets/models/textures/aluminium_smartphone_Mat_normal.png';
+import smartphoneRoughness from '../../assets/models/textures/aluminium_smartphone_Mat_roughness.png';
+import smartphoneMetallic from '../../assets/models/textures/aluminium_smartphone_Mat_metallic.png';
+
+// Lighter textures
+import lighterBaseColor from '../../assets/models/textures/Lighter_baseColor.png';
+import lighterNormal from '../../assets/models/textures/Lighter_normal.png';
+import lighterRoughness from '../../assets/models/textures/Lighter_roughness.png';
+import lighterMetallic from '../../assets/models/textures/Lighter_metallic.png';
 
 const ToyBear = ({ onClick, position, isZoomedView }: { onClick?: () => void; position: [number, number, number]; isZoomedView?: boolean }) => {
   const meshRef = useRef<THREE.Group>(null);
   const [hovered, setHovered] = useState(false);
 
-  const obj = useLoader(OBJLoader, '/src/assets/models/toy_bear.obj');
+  const obj = useLoader(OBJLoader, toyBearUrl);
 
   const textures = useTexture({
-    baseColor: '/src/assets/models/textures/toy_bear_Mat_baseColor.png',
-    normal: '/src/assets/models/textures/toy_bear_Mat_normal.png',
-    roughness: '/src/assets/models/textures/toy_bear_Mat_roughness.png',
+    baseColor: toyBearBaseColor,
+    normal: toyBearNormal,
+    roughness: toyBearRoughness,
   });
 
   obj.traverse((child) => {
@@ -54,13 +97,13 @@ const Notebook = ({ onClick, position, rotation, isZoomedView }: { onClick?: () 
   const meshRef = useRef<THREE.Group>(null);
   const [hovered, setHovered] = useState(false);
 
-  const obj = useLoader(OBJLoader, '/src/assets/models/Notebook.obj');
+  const obj = useLoader(OBJLoader, notebookUrl);
 
   const textures = useTexture({
-    paperBase: '/src/assets/models/textures/Paper_Mat_baseColor.png',
-    paperRoughness: '/src/assets/models/textures/Paper_Mat_roughness.png',
-    fabricBase: '/src/assets/models/textures/Fabric_Mat_baseColor.png',
-    fabricRoughness: '/src/assets/models/textures/Fabric_Mat_roughness.png',
+    paperBase: notebookPaperBase,
+    paperRoughness: notebookPaperRoughness,
+    fabricBase: notebookFabricBase,
+    fabricRoughness: notebookFabricRoughness,
   });
 
   obj.traverse((child) => {
@@ -97,12 +140,12 @@ const Lipstick = ({ onClick, position, rotation, isZoomedView }: { onClick?: () 
   const meshRef = useRef<THREE.Group>(null);
   const [hovered, setHovered] = useState(false);
 
-  const obj = useLoader(OBJLoader, '/src/assets/models/Lipstick_STEUXG9.obj');
+  const obj = useLoader(OBJLoader, lipstickUrl);
 
   const textures = useTexture({
-    crayonBase: '/src/assets/models/textures/Crayon_Mat_baseColor.png',
-    crayonNormal: '/src/assets/models/textures/Crayon_Mat_normal.png',
-    crayonRoughness: '/src/assets/models/textures/Crayon_Mat_roughness.png',
+    crayonBase: lipstickCrayonBase,
+    crayonNormal: lipstickCrayonNormal,
+    crayonRoughness: lipstickCrayonRoughness,
   });
 
   obj.traverse((child) => {
@@ -140,13 +183,13 @@ const WeddingRing = ({ onClick, position, rotation, isZoomedView }: { onClick?: 
   const meshRef = useRef<THREE.Group>(null);
   const [hovered, setHovered] = useState(false);
 
-  const obj = useLoader(OBJLoader, '/src/assets/models/wedding_ring_STVXUM8.obj');
+  const obj = useLoader(OBJLoader, weddingRingUrl);
 
   const textures = useTexture({
-    baseColor: '/src/assets/models/textures/wedding_ring_Mat_baseColor.png',
-    normal: '/src/assets/models/textures/wedding_ring_Mat_normal.png',
-    roughness: '/src/assets/models/textures/wedding_ring_Mat_roughness.png',
-    metallic: '/src/assets/models/textures/wedding_ring_Mat_metallic.png',
+    baseColor: weddingRingBaseColor,
+    normal: weddingRingNormal,
+    roughness: weddingRingRoughness,
+    metallic: weddingRingMetallic,
   });
 
   obj.traverse((child) => {
@@ -185,13 +228,13 @@ const Smartphone = ({ onClick, position, rotation }: { onClick?: () => void; pos
   const meshRef = useRef<THREE.Group>(null);
   const [hovered, setHovered] = useState(false);
 
-  const obj = useLoader(OBJLoader, '/src/assets/models/smartphone_STF7C31.obj');
+  const obj = useLoader(OBJLoader, smartphoneUrl);
 
   const textures = useTexture({
-    baseColor: '/src/assets/models/textures/aluminium_smartphone_Mat_baseColor.png',
-    normal: '/src/assets/models/textures/aluminium_smartphone_Mat_normal.png',
-    roughness: '/src/assets/models/textures/aluminium_smartphone_Mat_roughness.png',
-    metallic: '/src/assets/models/textures/aluminium_smartphone_Mat_metallic.png',
+    baseColor: smartphoneBaseColor,
+    normal: smartphoneNormal,
+    roughness: smartphoneRoughness,
+    metallic: smartphoneMetallic,
   });
 
   obj.traverse((child) => {
@@ -230,13 +273,13 @@ const Lighter = ({ onClick, position, rotation, isZoomedView }: { onClick?: () =
   const meshRef = useRef<THREE.Group>(null);
   const [hovered, setHovered] = useState(false);
 
-  const obj = useLoader(OBJLoader, '/src/assets/models/Lighter_STCLU2N.obj');
+  const obj = useLoader(OBJLoader, lighterUrl);
 
   const textures = useTexture({
-    baseColor: '/src/assets/models/textures/Lighter_baseColor.png',
-    normal: '/src/assets/models/textures/Lighter_normal.png',
-    roughness: '/src/assets/models/textures/Lighter_roughness.png',
-    metallic: '/src/assets/models/textures/Lighter_metallic.png',
+    baseColor: lighterBaseColor,
+    normal: lighterNormal,
+    roughness: lighterRoughness,
+    metallic: lighterMetallic,
   });
 
   obj.traverse((child) => {
@@ -709,7 +752,7 @@ const InsideBag = () => {
               }
             }}
           >
-            <audio ref={audioRef} src="/src/assets/audio/vocal.mp3" />
+            <audio ref={audioRef} src={vocalAudio} />
             <div
               className="w-[300px] h-[90%] relative bg-black rounded-[40px] border-[8px] border-black shadow-2xl"
               onClick={(e) => e.stopPropagation()}

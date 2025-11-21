@@ -5,16 +5,20 @@ import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 import { Mesh } from 'three';
 import * as THREE from 'three';
 import { motion, AnimatePresence } from 'framer-motion';
+import bagModelUrl from '../assets/models/woman_travel_bag_open.obj?url';
+import bagBaseColorUrl from '../assets/models/textures/fabric_bag_MAT_baseColor.png';
+import bagNormalUrl from '../assets/models/textures/fabric_bag_MAT_normal.png';
+import bagRoughnessUrl from '../assets/models/textures/fabric_bag_MAT_roughness.png';
 
 const BagModel = ({ onClick }: { onClick?: () => void }) => {
   const meshRef = useRef<THREE.Group>(null);
 
-  const obj = useLoader(OBJLoader, '/src/assets/models/woman_travel_bag_open.obj');
+  const obj = useLoader(OBJLoader, bagModelUrl);
 
   const textures = useTexture({
-    baseColor: '/src/assets/models/textures/fabric_bag_MAT_baseColor.png',
-    normal: '/src/assets/models/textures/fabric_bag_MAT_normal.png',
-    roughness: '/src/assets/models/textures/fabric_bag_MAT_roughness.png',
+    baseColor: bagBaseColorUrl,
+    normal: bagNormalUrl,
+    roughness: bagRoughnessUrl,
   });
 
   useFrame(() => {
