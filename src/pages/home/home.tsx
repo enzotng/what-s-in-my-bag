@@ -46,7 +46,7 @@ const Home = () => {
                                 bag?
                             </h1>
                             <p className="text-lg md:text-xl text-[var(--dark-70)] max-w-2xl mx-auto px-4">
-                                On a pas tous le même bagage
+                                On n'a pas tous le même bagage
                             </p>
                         </motion.div>
 
