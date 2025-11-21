@@ -1,8 +1,7 @@
 import { useState, useEffect, useRef, Suspense, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Canvas, useFrame, useLoader, useThree } from '@react-three/fiber';
+import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import { PerspectiveCamera, useTexture, OrbitControls } from '@react-three/drei';
-import { useNavigate } from 'react-router-dom';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 import { Mesh } from 'three';
 import * as THREE from 'three';
@@ -272,7 +271,7 @@ const Lighter = ({ onClick, position, rotation, isZoomedView }: { onClick?: () =
   );
 };
 
-const ZoomedObjectView = ({ objectName, onClose }: { objectName: string; onClose: () => void }) => {
+const ZoomedObjectView = ({ objectName }: { objectName: string; onClose: () => void }) => {
   const renderObject = () => {
     switch (objectName) {
       case 'toyBear':
@@ -310,7 +309,6 @@ const InsideBagScene = ({
   onNotebookClick,
   onLipstickClick,
   onWeddingRingClick,
-  onLighterClick,
   positions,
   rotations,
   zoomedObject
@@ -320,7 +318,6 @@ const InsideBagScene = ({
   onNotebookClick?: () => void;
   onLipstickClick?: () => void;
   onWeddingRingClick?: () => void;
-  onLighterClick?: () => void;
   positions: [number, number, number][];
   rotations: [number, number, number][];
   zoomedObject: string | null;
@@ -386,7 +383,7 @@ const InsideBagScene = ({
           <ToyBear
             onClick={onToyBearClick}
             position={positions[0]}
-            isZoomed={zoomedObject === 'toyBear'}
+            isZoomedView={zoomedObject === 'toyBear'}
           />
         )}
       </Suspense>
@@ -397,7 +394,7 @@ const InsideBagScene = ({
             onClick={onNotebookClick}
             position={positions[1]}
             rotation={rotations[1]}
-            isZoomed={zoomedObject === 'notebook'}
+            isZoomedView={zoomedObject === 'notebook'}
           />
         )}
       </Suspense>
@@ -408,7 +405,7 @@ const InsideBagScene = ({
             onClick={onLipstickClick}
             position={positions[2]}
             rotation={rotations[2]}
-            isZoomed={zoomedObject === 'lipstick'}
+            isZoomedView={zoomedObject === 'lipstick'}
           />
         )}
       </Suspense>
@@ -419,7 +416,7 @@ const InsideBagScene = ({
             onClick={onWeddingRingClick}
             position={positions[3]}
             rotation={rotations[3]}
-            isZoomed={zoomedObject === 'weddingRing'}
+            isZoomedView={zoomedObject === 'weddingRing'}
           />
         )}
       </Suspense>
@@ -592,7 +589,6 @@ const InsideBag = () => {
               onNotebookClick={() => handleObjectClick('notebook')}
               onLipstickClick={() => handleObjectClick('lipstick')}
               onWeddingRingClick={() => handleObjectClick('weddingRing')}
-              onLighterClick={undefined}
               positions={objectPositions}
               rotations={objectRotations}
               zoomedObject={zoomedObject}

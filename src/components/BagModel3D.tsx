@@ -2,7 +2,7 @@ import { useRef, useState, Suspense } from 'react';
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
 import { OrbitControls, PerspectiveCamera, useTexture } from '@react-three/drei';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
-import { TextureLoader, Mesh } from 'three';
+import { Mesh } from 'three';
 import * as THREE from 'three';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -17,7 +17,7 @@ const BagModel = ({ onClick }: { onClick?: () => void }) => {
     roughness: '/src/assets/models/textures/fabric_bag_MAT_roughness.png',
   });
 
-  useFrame((state) => {
+  useFrame(() => {
     if (meshRef.current) {
       meshRef.current.rotation.y += 0.003;
     }
